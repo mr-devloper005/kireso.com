@@ -3,48 +3,58 @@ import { slot4BrandConfig } from '@/editable/theme/brand.config'
 export const pagesContent = {
   home: {
     metadata: {
-      title: 'Stories, visuals, and discoverable content',
-      description: 'Explore articles, images, listings, and curated posts through a cleaner reading-first experience.',
-      openGraphTitle: 'Stories, visuals, and discoverable content',
-      openGraphDescription: 'Discover articles, visual posts, and connected content through a calmer reading-first experience.',
-      keywords: ['story platform', 'article site', 'visual content', 'content discovery'],
+      title: 'Discover curated bookmarks, resources & collections',
+      description:
+        'Browse a focused library of hand-picked bookmarks, trusted references, and downloadable resources in one clean experience.',
+      openGraphTitle: 'Discover curated bookmarks, resources & collections',
+      openGraphDescription:
+        'A focused resource library built around quality over noise — bookmarks, collections, and references worth saving.',
+      keywords: ['bookmarks', 'curated resources', 'resource library', 'collections', 'references'],
     },
     hero: {
-      badge: 'Latest stories and visuals',
-      title: ['A thoughtful home for', 'stories, visuals, and discovery.'],
-      description: 'Explore fresh articles, image-led posts, and discoverable content across the platform through a calmer and clearer browsing experience.',
-      primaryCta: { label: 'Read latest stories', href: '/article' },
-      secondaryCta: { label: 'Explore visuals', href: '/image' },
-      searchPlaceholder: 'Search stories, visuals, listings, and more',
+      badge: 'A curated resource library',
+      title: ['Save what matters.', 'Find it when it counts.'],
+      description:
+        'Explore hand-picked bookmarks, trusted references, and downloadable resources through one focused, well-organised library.',
+      primaryCta: { label: 'Browse resources', href: '/sbm' },
+      secondaryCta: { label: 'Explore library', href: '/pdf' },
+      searchPlaceholder: 'Search resources, bookmarks, topics…',
       focusLabel: 'Focus',
       featureCardBadge: 'latest cover rotation',
       featureCardTitle: 'Latest posts shape the visual identity of the homepage.',
-      featureCardDescription: 'Recent images and stories stay at the center of the experience without changing any core platform behavior.',
+      featureCardDescription:
+        'Recent images and stories stay at the center of the experience without changing any core platform behaviour.',
     },
+    stats: [
+      { label: 'Curated resources', value: '1,200+' },
+      { label: 'Collections', value: '80+' },
+      { label: 'Updated', value: 'Daily' },
+    ],
     intro: {
-      badge: 'About the platform',
-      title: 'Built for reading, browsing, and connecting different kinds of content.',
+      badge: 'Why this library',
+      title: 'A calmer way to save, browse, and rediscover useful things.',
       paragraphs: [
-        'This site brings together article-style reading, visual browsing, and structured discovery so visitors can move naturally between different content types.',
-        'Instead of separating stories, visuals, and supporting resources into disconnected surfaces, the platform keeps them connected in one place with consistent navigation and easier exploration.',
-        'Whether someone starts with a story, an image-led post, a listing, or a resource page, they can keep discovering related content without friction.',
+        'Most bookmarks get lost in cluttered folders or browser tabs. This platform keeps every saved resource organised, searchable, and easy to return to.',
+        'Whether you start from a curated collection, a single bookmark, or a downloadable guide — the experience keeps everything connected and simple to navigate.',
+        'No noise. No endless feeds. Just the resources that have already been vetted and organised for you.',
       ],
       sideBadge: 'At a glance',
       sidePoints: [
-        'Reading-first homepage with stronger emphasis on stories and imagery.',
-        'Connected sections for articles, visuals, listings, and supporting resources.',
-        'Cleaner browsing rhythm designed to make exploration feel easier.',
-        'Lightweight interactions that keep the experience fast and readable.',
+        'Hand-curated bookmarks with context and categories.',
+        'Downloadable guides, reports, and reference documents.',
+        'Clean search across the entire resource library.',
+        'Lightweight, fast, and built for focused discovery.',
       ],
-      primaryLink: { label: 'Browse articles', href: '/article' },
-      secondaryLink: { label: 'See visuals', href: '/image' },
+      primaryLink: { label: 'Browse bookmarks', href: '/sbm' },
+      secondaryLink: { label: 'Open PDF library', href: '/pdf' },
     },
     cta: {
       badge: 'Start exploring',
-      title: 'Explore articles, visuals, and resources through one connected experience.',
-      description: 'Move between articles, image-led posts, listings, and resources through one clearer and more connected visual system.',
-      primaryCta: { label: 'Browse Articles', href: '/article' },
-      secondaryCta: { label: 'Contact Sales', href: '/contact' },
+      title: 'Discover resources organised for clarity, not just volume.',
+      description:
+        'Browse curated bookmarks, downloadable guides, and trusted references through one clean and connected experience.',
+      primaryCta: { label: 'Browse resources', href: '/sbm' },
+      secondaryCta: { label: 'Get in touch', href: '/contact' },
     },
     taskSection: {
       heading: 'Latest {label}',
@@ -52,89 +62,117 @@ export const pagesContent = {
     },
   },
   about: {
-    badge: 'Our Story',
-    title: 'A calmer, clearer way to explore content.',
-    description: `${slot4BrandConfig.siteName} is built to make long-form reading, visual discovery, and supporting resources feel like one unified experience.`,
+    badge: 'Our story',
+    title: 'A calmer, cleaner way to save and rediscover useful resources.',
+    description: `${slot4BrandConfig.siteName} is built around one idea: the best resources deserve a proper home, not a forgotten browser tab.`,
     paragraphs: [
-      'Instead of splitting everything into disconnected pages, the platform keeps related content easy to move through and easy to understand.',
-      'Whether someone starts with an article, listing, image post, or resource page, they can continue exploring without losing context.',
+      'We curate bookmarks, reference documents, and downloadable guides so that visitors can find useful material without wading through noise.',
+      'The platform keeps related content connected — so moving from a saved link to a related document or collection feels natural, not jarring.',
     ],
     values: [
       {
-        title: 'Reading-first experience',
-        description: 'We prioritize clarity, pacing, and structure so people can read, browse, and discover without noise.',
+        title: 'Quality over volume',
+        description:
+          'Every resource in the library has been reviewed. We prioritise depth and usefulness over filling pages with mediocre content.',
       },
       {
-        title: 'Connected content surfaces',
-        description: 'Articles, visual posts, listings, resources, and profiles stay connected so discovery feels natural across the site.',
+        title: 'Calm, focused discovery',
+        description:
+          'Clean navigation, clear categories, and consistent structure let visitors move through the library at their own pace.',
       },
       {
-        title: 'Simple and trustworthy',
-        description: 'We focus on clean navigation and clear page structure to help visitors find useful content faster.',
+        title: 'Built for return visits',
+        description:
+          'Bookmarks are only useful if you can find them again. The library is organised to make every revisit faster than the last.',
       },
+    ],
+    highlights: [
+      { value: '1,200+', label: 'Curated resources' },
+      { value: '80+', label: 'Organised collections' },
+      { value: '100%', label: 'Human-reviewed' },
     ],
   },
   contact: {
     eyebrow: `Contact ${slot4BrandConfig.siteName}`,
-    title: 'A support page that matches the product, not a generic contact form.',
-    description: 'Tell us what you are trying to publish, fix, or launch. We will route it through the right lane instead of forcing every request into the same support bucket.',
+    title: 'Tell us what you need — we route every request to the right place.',
+    description:
+      'Whether you want to suggest a resource, ask about a partnership, or just say hello — use the form and we will get back to you within one working day.',
     formTitle: 'Send a message',
+    faq: [
+      {
+        q: 'How do I submit a resource?',
+        a: 'Use the Contact form to suggest a bookmark, guide, or document. We review every submission before adding it to the library.',
+      },
+      {
+        q: 'Can I contribute as a curator?',
+        a: 'Yes — reach out via the form and describe what area you would like to help curate. We always welcome subject-matter experts.',
+      },
+      {
+        q: 'Is the library free to use?',
+        a: 'Yes, browsing the entire library is free. Some features require an account.',
+      },
+    ],
   },
 
   search: {
     metadata: {
       title: 'Search',
-      description: 'Search posts, topics, categories, and content across the site.',
+      description: 'Search bookmarks, collections, and resources across the library.',
     },
     hero: {
-      badge: 'Search the archive',
-      title: 'Find stories, listings, visuals, and resources faster.',
-      description: 'Use keywords, categories, and content types to discover posts from every active section of the site.',
-      placeholder: 'Search by keyword, topic, category, or title',
+      badge: 'Search the library',
+      title: 'Find exactly what you are looking for.',
+      description:
+        'Search across every bookmark, collection, and downloadable resource by keyword, category, or topic.',
+      placeholder: 'Search by keyword, topic, category, or title…',
     },
-    resultsTitle: 'Latest searchable content',
+    resultsTitle: 'Latest resources',
   },
   create: {
     metadata: {
       title: 'Create',
-      description: 'Create and submit new content for the site.',
+      description: 'Submit new content to the resource library.',
     },
     locked: {
       badge: 'Creator access',
-      title: 'Login to create new content.',
-      description: 'Use your account to open the publishing workspace and create posts for the active sections of this site.',
+      title: 'Sign in to submit content.',
+      description:
+        'Log in to your account to access the publishing workspace and add bookmarks or documents to the library.',
     },
     hero: {
       badge: 'Publishing workspace',
-      title: 'Create content for every active section.',
-      description: 'Choose the content type, add details, and prepare a clean post with images, links, summary, and body content.',
+      title: 'Add a resource to the library.',
+      description:
+        'Choose a content type, add its details, and submit it for review. Bookmarks and documents are welcome.',
     },
-    formTitle: 'Content details',
-    submitLabel: 'Submit content',
-    successTitle: 'Content submitted successfully.',
+    formTitle: 'Resource details',
+    submitLabel: 'Submit resource',
+    successTitle: 'Resource submitted successfully.',
   },
   auth: {
     login: {
-      metadataDescription: 'Login page for this site.',
-      badge: 'Member access',
-      title: 'Welcome back to your publishing space.',
-      description: 'Login to continue browsing, managing submissions, and creating new content from your account.',
-      formTitle: 'Login',
+      metadataDescription: 'Sign in to your account.',
+      badge: 'Welcome back',
+      title: 'Sign in to your account.',
+      description:
+        'Log in to continue managing your submissions and accessing the publishing workspace.',
+      formTitle: 'Sign in',
       submitLabel: 'Continue',
-      noAccount: 'No account matched these details. Create an account first, then login.',
-      success: 'Login successful. Redirecting...',
+      noAccount: 'No account matched these details. Create an account first, then sign in.',
+      success: 'Signed in. Redirecting…',
       createCta: 'Create an account',
     },
     signup: {
-      metadataDescription: 'Signup page for this site.',
-      badge: 'Site access',
-      title: 'Create your account and start publishing.',
-      description: 'Create an account to access the publishing workspace, save details, and submit content through the site.',
+      metadataDescription: 'Create your account.',
+      badge: 'Join the library',
+      title: 'Create your account and start contributing.',
+      description:
+        'Create an account to access the publishing workspace and submit resources to the library.',
       formTitle: 'Create account',
       submitLabel: 'Create account',
-      passwordShort: 'Use at least 4 characters for the password.',
-      success: 'Account created successfully. Redirecting...',
-      loginCta: 'Login',
+      passwordShort: 'Use at least 4 characters for your password.',
+      success: 'Account created. Redirecting…',
+      loginCta: 'Sign in',
     },
   },
   detailPages: {
@@ -151,9 +189,9 @@ export const pagesContent = {
       fallbackTitle: 'Image details',
     },
     profile: {
-      relatedTitle: 'Suggested articles',
+      relatedTitle: 'More resources',
       fallbackDescription: 'Profile details will appear here once available.',
-      visitButton: 'Visit Official Site',
+      visitButton: 'Visit official site',
     },
   },
 } as const
